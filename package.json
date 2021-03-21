@@ -1,0 +1,32 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmadeusJ/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/AmadeusJ/docs#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "@vuepress/plugin-last-updated": "^1.5.2",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-google-adsense": "^0.1.1",
+    "vuepress-plugin-sitemap": "^2.3.1"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
