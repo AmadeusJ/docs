@@ -1,0 +1,40 @@
+site_name: My Django Docs
+nav:
+  - Home: index.md
+  - Model Layer:
+    - model/index.md
+    - Model : model/model.md
+    - Making Queries : model/making_queries.md
+    - Model instance reference : model/model_inst_ref.md
+
+  - API:
+    - Queryset API: api/queryset_api/queryset_api.md
+
+  - About: about.md
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - pymdownx.superfences
+    - pymdownx.betterem
+    - pymdownx.extra
+    - pymdownx.highlight
+
+  palette:
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
