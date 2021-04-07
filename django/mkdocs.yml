@@ -2,25 +2,33 @@ site_name: My Django Docs
 nav:
   - Home: index.md
   - Model Layer:
-    - model/index.md
-    - Model : model/model.md
-    - Making Queries : model/making_queries.md
-    - Model instance reference : model/model_inst_ref.md
+    - model_layer/index.md
+    - Model: 
+      - model_layer/model/index.md
+      - Making Queries:
+        - model_layer/model/making_queries.md
+        - Queryset API: api/queryset_api/queryset_api.md
+      - Model instance reference: model/model_inst_ref.md
+      
+  - Django REST API:
+    - rest_api/index.md
 
-  - API:
-    - Queryset API: api/queryset_api/queryset_api.md
+
+
 
   - About: about.md
 
 theme:
   name: material
   features:
-    - navigation.expand
+    - navigation.tracking
     - navigation.indexes
+    - navigation.expand
     - pymdownx.superfences
     - pymdownx.betterem
     - pymdownx.extra
     - pymdownx.highlight
+    # - toc.integrate
 
   palette:
     # Dark mode
@@ -38,3 +46,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
+
+plugins:
+  - section-index
